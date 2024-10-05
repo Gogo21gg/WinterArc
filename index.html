@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Arc - .men</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img style="border-radius: 15px;" src="kvote.jpg" alt="Men Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#plans">Plans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction" class="fade-in">
+        <h2>What is the Winter Arc?</h2>
+        <p>The Winter Arc is your challenge to conquer the cold months. It's about building discipline, working on yourself, and staying strong. Here’s what you need to know.</p>
+        <img id="inspiration-img1" src="https://via.placeholder.com/800x400" alt="Inspiration Image 1" class="inspiration-img">
+    </section>
+
+    <section id="rules" class="fade-in">
+        <h2>Rules</h2>
+        <div class="card">
+            <p>Train at least four times a week.</p>
+        </div>
+        <div class="card">
+            <p>Stay disciplined with your schedule.</p>
+        </div>
+        <div class="card">
+            <p>Take cold showers.</p>
+        </div>
+        <div class="card">
+            <p>Read or learn something new daily.</p>
+        </div>
+        <div class="card">
+            <p>Follow a healthy diet.</p>
+        </div>
+        <div class="card">
+            <p>Sleep at least 7 hours a night.</p>
+        </div>
+        <div class="card">
+            <p>Replace junk food with nutritious alternatives.</p>
+        </div>
+        <div class="card">
+            <p>Cut out recreational activities like gaming.</p>
+        </div>
+        <div class="card">
+            <p>Train at least 1hour a day.</p>
+        </div>
+
+
+        <img id="inspiration-img2" src="https://via.placeholder.com/600x300" alt="Inspiration Image 2" class="inspiration-img">
+    </section>
+
+    <section id="daily-tasks" class="fade-in">
+        <h2>Daily Checklist</h2>
+        <form id="task-form">
+            <label><input type="checkbox" class="task-checkbox" id="task1"> Complete workout</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task2"> Cold shower</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task3"> Read 30 minutes</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task4"> Stay productive</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task5"> Eat a balanced meal</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task6"> Done Cardio</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task7"> Less than 5h ScreenTime</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task8"> Drink 8 Glasses of Water</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task9"> Set Daily Goals</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task10"> Stay Positive</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task11"> No Sugar intake</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task12"> Done tasks for day</label><br>
+            <label><input type="checkbox" class="task-checkbox" id="task13"> End of day</label><br>
+            <button type="button" onclick="resetTasks()">Reset Daily Tasks</button>
+        </form>
+    
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <div id="progress-text">0% (You need at least 75% to pass)</div>
+        </div>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

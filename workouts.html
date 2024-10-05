@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Arc - .men</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            margin-right: 2rem;
+        }
+
+        .logo img {
+            width: 250px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            background: transparent;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+        }
+
+        section {
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        #workouts {
+            background-color: rgba(37, 37, 37, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .day-card {
+            background: rgba(50, 50, 50, 0.8);
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            color: #fff;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .view-more, .complete, .reset {
+            cursor: pointer;
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .view-more:hover, .complete:hover, .reset:hover {
+            background: #218838;
+        }
+
+        .exercises {
+            display: none;
+            margin-top: 10px;
+            color: #e0e0e0;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+
+        .animation {
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img style="border-radius: 15px;" src="kvote.jpg" alt="Men Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#plans">Plans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="workouts" class="fade-in">
+        <h2>7-Day Workout Plan</h2>
+        
+        <div id="day1" class="day-card">
+            <div class="day-header">
+                <h3>Day 1: Full Body Workout</h3>
+                <button class="view-more">View More</button>
+            </div>
+            <div class="exercises">
+                <ul>
+                    <li>Push-ups: 3 sets of 10-15 reps</li>
+                    <li>Bodyweight Squats: 3 sets of 12-15 reps</li>
+                    <li>Burpees: 3 sets of 10 reps</li>
+                    <li>Plank: 3 sets of 30-60 seconds</li>
+                    <li>Mountain Climbers: 3 sets of 15-20 reps</li>
+                    <li>Jumping Jacks: 3 sets of 30 seconds</li>
+                    <li>Dumbbell Thrusters (or any heavy object): 3 sets of 10-12 reps</li>
+                    <li>High Knees: 3 sets of 30 seconds</li>
+                </ul>
+                <button class="complete">Complete</button>
+            </div>
+        </div>
+
+        <div id="day2" class="day-card">
+            <div class="day-header">
+                <h3>Day 2: Cardio</h3>
+                <button class="view-more">View More</button>
+            </div>
+            <div class="exercises">
+                <ul>
+                    <li>Jumping Jacks: 3 sets of 30 seconds</li>
+                    <li>High Knees: 3 sets of 30 seconds</li>
+                    <li>Burpees: 3 sets of 10 reps</li>
+                    <li>Mountain Climbers: 3 sets of 30 seconds</li>
+                    <li>Shadow Boxing: 3 sets of 2 minutes</li>
+                    <li>Jump Rope (or pretend to jump rope): 3 sets of 1 minute</li>
+                    <li>Running in Place: 3 sets of 1 minute</li>
+                    <li>Stair Climbing (up and down a set of stairs): 3 sets of 1 minute</li>
+                </ul>
+                <button class="complete">Complete</button>
+            </div>
+        </div>
+
+        <div id="day3" class="day-card">
+            <div class="day-header">
+                <h3>Day 3: Upper Body</h3>
+                <button class="view-more">View More</button>
+            </div>
+            <div class="exercises">
+                <ul>
+                    <li>Push-ups: 3 sets of 10-15 reps</li>
+                    <li>Dips (using a chair): 3 sets of 10-15 reps</li>
+                    <li>Incline Push-ups (feet on the ground, hands elevated): 3 sets of 8-12 reps</li>
+                    <li>Plank Shoulder Taps: 3 sets of 10-15 reps (each side)</li>
+                    <li>Superman Exercise: 3 sets of 10-12 reps</li>
+                    <li>Bent-over Dumbbell Rows (using water bottles): 3 sets of 10-12 reps</li>
+                    <li>Wall Push-ups: 3 sets of 10-15 reps</li>
+                    <li>Handstand Holds (against a wall): 3 sets of 20-30 seconds</li>
+                </ul>
+                <button class="complete">Complete</button>
+            </div>
+        </div>
+
+        <div id="day4" class="day-card">
+            <div class="day-header">
+                <h3>Day 4: Lower Body</h3>
+                <button class="view-more">View More</button>
+            </div>
+            <div class="exercises">
+                <ul>
+                    <li>Bodyweight Squats: 3 sets of 12-15 reps</li>
+                    <li>Lunges: 3 sets of 10-12 reps (each leg)</li>
+                    <li>Step-ups (on a sturdy chair): 3 sets of 10-12 reps (each leg)</li>
+                    <li>Calf Raises: 3 sets of 15-20 reps</li>
+                    <li>Glute Bridges: 3 sets of 12-15 reps</li>
+                    <li>Wall Sits: 3 sets of 30-60 seconds</li>
+                    <li>Side Lunges: 3 sets of 10-12 reps (each leg)</li>
+                    <li>Donkey Kicks: 3 sets of 12-15 reps (each leg)</li>
+                </ul>
+                <button class="complete">Complete</button>
+            </div>
+        </div>
+
+        <div id="day5" class="day-card">
+            <div class="day-header">
+                <h3>Day 5: Core Workout</h3>
+                <button class="view-more">View More</button>
+            </div>
+            <div class="exercises">
+                <ul>
+                    <li>Plank: 3 sets of 30-60 seconds</li>
+                    <li>Russian Twists: 3 sets of 15-20 reps (each side)</li>
+                    <li>Bicycle Crunches: 3 sets of 15-20 reps (each side)</li>
+                    <li>Leg Raises: 3 sets of 10-15 reps</li>
+                    <li>Side Plank: 3 sets of 20-30 seconds (each side)</li>
+                    <li>Flutter Kicks: 3 sets of 15-20 reps</li>
+                    <li>V-Ups: 3 sets of 10-12 reps</li>
+                    <li>Mountain Climbers: 3 sets of 30 seconds</li>
+                </ul>
+                <button class="complete">Complete</button>
+            </div>
+        </div>
+
+        <div id="day6" class="day-card">
+            <div class="day-header">
+                <h3>Day 6: Full Body HIIT</h3>
+                <button class="view-more">View More</button>
+            </div>
+            <div class="exercises">
+                <ul>
+                    <li>Burpees: 3 sets of 10 reps</li>
+                    <li>Jump Squats: 3 sets of 10-15 reps</li>
+                    <li>Push-ups: 3 sets of 10-15 reps</li>
+                    <li>High Knees: 3 sets of 30 seconds</li>
+                    <li>Mountain Climbers: 3 sets of 30 seconds</li>
+                    <li>Plank Jacks: 3 sets of 10-15 reps</li>
+                    <li>Alternating Lunges: 3 sets of 10-12 reps (each leg)</li>
+                    <li>Star Jumps: 3 sets of 8-10 reps</li>
+                </ul>
+                <button class="complete">Complete</button>
+            </div>
+        </div>
+
+        <div id="day7" class="day-card">
+            <div class="day-header">
+                <h3>Day 7: Recovery Day</h3>
+                <button class="view-more">View More</button>
+            </div>
+            <div class="exercises">
+                <ul>
+                    <li>Yoga or Stretching: 30 minutes</li>
+                    <li>Light Walking: 20-30 minutes</li>
+                </ul>
+                <button class="complete">Complete</button>
+            </div>
+        </div>
+
+        <button id="reset" class="reset">Reset Workouts</button>
+    </section>
+
+    <script>
+        // Initialize completed workouts
+        const completedWorkouts = JSON.parse(localStorage.getItem('completedWorkouts')) || [];
+
+        // Update UI based on completed workouts
+        function updateWorkoutUI() {
+            completedWorkouts.forEach(day => {
+                const dayCard = document.getElementById(day);
+                if (dayCard) {
+                    const completeButton = dayCard.querySelector('.complete');
+                    const exercises = dayCard.querySelector('.exercises');
+                    if (completeButton && exercises) {
+                        completeButton.classList.add('completed');
+                        exercises.style.display = 'block';
+                    }
+                }
+            });
+        }
+
+        // Add event listeners to complete buttons
+        document.querySelectorAll('.complete').forEach(button => {
+            button.addEventListener('click', function() {
+                const dayCard = this.closest('.day-card');
+                const dayId = dayCard.id;
+
+                if (!completedWorkouts.includes(dayId)) {
+                    completedWorkouts.push(dayId);
+                    localStorage.setItem('completedWorkouts', JSON.stringify(completedWorkouts));
+                    dayCard.querySelector('.exercises').style.display = 'block';
+                    this.classList.add('completed');
+                }
+            });
+        });
+
+        // Add event listeners to view more buttons
+        document.querySelectorAll('.view-more').forEach(button => {
+            button.addEventListener('click', function() {
+                const exercises = this.closest('.day-card').querySelector('.exercises');
+                exercises.style.display = exercises.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Reset workouts
+        document.getElementById('reset').addEventListener('click', function() {
+            if (confirm("Are you sure you want to reset all workouts?")) {
+                localStorage.removeItem('completedWorkouts');
+                completedWorkouts.length = 0;
+                document.querySelectorAll('.day-card').forEach(dayCard => {
+                    dayCard.querySelector('.exercises').style.display = 'none';
+                    dayCard.querySelector('.complete').classList.remove('completed');
+                });
+            }
+        });
+
+        // Initialize the UI
+        updateWorkoutUI();
+    </script>
+</body>
+</html>
